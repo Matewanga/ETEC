@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dti"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-05-04 02:00:16 "/>
+        <attribute name="created" value="ZHRpO0xBQjEwNC0xMzsyMDIyLTA0LTI3OyIwMjoxODozMyAiOzIwMTM="/>
+        <attribute name="edited" value="ZHRpO0xBQjEwNC0xMzsyMDIyLTA1LTA0OyIwMjowMDoxNiAiOzM7MjExMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="DIA1, DIA2, MES1, MES2, ANO1, ANO2" type="Integer" array="False" size=""/>
+            <declare name="DIA3, MES3, ANO3" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o primeiro...&quot;" newline="True"/>
+            <output expression="&quot;Dia&quot;" newline="True"/>
+            <input variable="DIA1"/>
+            <output expression="&quot;M&#234;s&quot;" newline="True"/>
+            <input variable="MES1"/>
+            <output expression="&quot;Ano&quot;" newline="True"/>
+            <input variable="ANO1"/>
+            <output expression="&quot;Digite o segundo...&quot;" newline="True"/>
+            <output expression="&quot;Dia&quot;" newline="True"/>
+            <input variable="DIA2"/>
+            <output expression="&quot;M&#234;s&quot;" newline="True"/>
+            <input variable="MES2"/>
+            <output expression="&quot;Ano&quot;" newline="True"/>
+            <input variable="ANO2"/>
+            <assign variable="ANO3" expression="ANO1-ANO2"/>
+            <assign variable="MES3" expression="MES1-MES2"/>
+            <assign variable="DIA3" expression="DIA1-DIA2"/>
+            <if expression="ANO3 &gt; 0">
+                <then>
+                    <output expression="DIA1&amp;&quot;/&quot;&amp;MES1&amp;&quot;/&quot;&amp;ANO1&amp;&quot; , &quot;&amp;DIA2&amp;&quot;/&quot;&amp;MES2&amp;&quot;/&quot;&amp;ANO2" newline="True"/>
+                </then>
+                <else>
+                    <if expression="ANO3 &lt; 0">
+                        <then>
+                            <output expression="DIA2&amp;&quot;/&quot;&amp;MES2&amp;&quot;/&quot;&amp;ANO2  &amp;&quot; , &quot;&amp; DIA1&amp;&quot;/&quot;&amp;MES1&amp;&quot;/&quot;&amp;ANO1" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="MES3 &gt; 0">
+                                <then>
+                                    <output expression="DIA1&amp;&quot;/&quot;&amp;MES1&amp;&quot;/&quot;&amp;ANO1&amp;&quot; , &quot;&amp;DIA2&amp;&quot;/&quot;&amp;MES2&amp;&quot;/&quot;&amp;ANO2" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="MES3 &lt;0">
+                                        <then>
+                                            <output expression="DIA2&amp;&quot;/&quot;&amp;MES2&amp;&quot;/&quot;&amp;ANO2  &amp;&quot; , &quot;&amp; DIA1&amp;&quot;/&quot;&amp;MES1&amp;&quot;/&quot;&amp;ANO1" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="DIA3 &gt; 0">
+                                                <then>
+                                                    <output expression="DIA1&amp;&quot;/&quot;&amp;MES1&amp;&quot;/&quot;&amp;ANO1&amp;&quot; , &quot;&amp;DIA2&amp;&quot;/&quot;&amp;MES2&amp;&quot;/&quot;&amp;ANO2" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="DIA3&lt; 0">
+                                                        <then>
+                                                            <output expression="DIA2&amp;&quot;/&quot;&amp;MES2&amp;&quot;/&quot;&amp;ANO2  &amp;&quot; , &quot;&amp; DIA1&amp;&quot;/&quot;&amp;MES1&amp;&quot;/&quot;&amp;ANO1" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="DIA1&amp;&quot;/&quot;&amp;MES1&amp;&quot;/&quot;&amp;ANO1&amp;&quot; , &quot;&amp;DIA2&amp;&quot;/&quot;&amp;MES2&amp;&quot;/&quot;&amp;ANO2" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

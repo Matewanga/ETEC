@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dti"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-05-18 03:03:42 "/>
+        <attribute name="created" value="ZHRpO0xBQjEwNC0xNDsyMDIyLTA1LTE4OyIwMTowNTowNyAiOzIwMTE="/>
+        <attribute name="edited" value="ZHRpO0xBQjEwNC0xNDsyMDIyLTA1LTE4OyIwMzowMzo0MiAiOzU7MjEyMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cliente" type="Integer" array="False" size=""/>
+            <output expression="&quot;bem vindo ao macdonald,o que voc&#234; gostaria de pedir?&quot;" newline="True"/>
+            <output expression="&quot;bem no nosso cardapio tem&quot;" newline="True"/>
+            <output expression="&quot;1.BigMac&quot;" newline="True"/>
+            <output expression="&quot;2.Quarteir&#227;o&quot;" newline="True"/>
+            <output expression="&quot;3.MacChicken&quot;" newline="True"/>
+            <output expression="&quot;4.CheddarMacMelt&quot;" newline="True"/>
+            <output expression="&quot;5.MacMax&quot;" newline="True"/>
+            <output expression="&quot;qual o senhor(a) gostaria de pedir?&quot;" newline="True"/>
+            <output expression="&quot;escreva um numero para qual dos nosso laches voc&#234; quer?&quot;" newline="True"/>
+            <input variable="cliente"/>
+            <if expression="cliente=1">
+                <then>
+                    <output expression="&quot;ok,BigMac indo&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="cliente=2">
+                        <then>
+                            <output expression="&quot;ok,Quarteir&#227;o indo&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="cliente=3">
+                                <then>
+                                    <output expression="&quot;ok,MacChicken indo&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="cliente=4">
+                                        <then>
+                                            <output expression="&quot;ok,CheddarMacMelt indo&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="cliente=5">
+                                                <then>
+                                                    <output expression="&quot;ok,MacMax indo&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;ent&#227;o senhor(a) n&#227;o temos esse laches&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

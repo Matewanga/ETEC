@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SEI LA</title>
+        <script type="text/javascript">
+            function ver(dia)
+            {
+            var semana = [];
+            
+            semana[0]="Domingo";
+            semana[1]="Segunda";
+            semana[2]="Terça";
+            semana[3]="Quarta";
+            semana[4]="Quinta";
+            semana[5]="Sexta";
+            semana[6]="Sábado";
+           if (dia.value<1 || dia.value>7)
+            alert("Resposta inválida");
+            else
+            alert(semana[parseInt(dia.value)-1]);
+        }
+        </script>
+    </head>
+    <body>
+        <form name="vetor">
+            Digite o número da semana:<br>
+            <input type="text" name="dia">
+            <br><br>
+            <input type="submit" value="Verificar" onclick="ver(dia)">
+            <br><br>
+            <input type="reset" value="Apagar">
+        </form>
+    </body>
+</html>

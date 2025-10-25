@@ -1,0 +1,20 @@
+Subprograma Principal
+    Declarar Real hora
+    
+    Escrever "programa para indetificaçâo de turno"
+    Escrever "digite o horario em que seu turno inicia"
+    Ler hora
+    Se hora<04.59
+        Escrever "periodo da noite"
+    Falso:
+        Se hora<12.59
+            Escrever "periodo da manhâ"
+        Falso:
+            Se hora<20.59
+                Escrever "periodo da tarde"
+            Falso:
+                Escrever "periodo da noite"
+            Fim
+        Fim
+    Fim
+Fim

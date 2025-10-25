@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-06-09 02:15:03 "/>
+        <attribute name="created" value="QWx1bm87TEFCLTA4LTAyOzIwMjItMDYtMDE7IjAyOjMzOjI1ICI7MjE5Mw=="/>
+        <attribute name="edited" value="QWx1bm87TEFCLTA4LTAyOzIwMjItMDYtMDE7IjAyOjU2OjE4ICI7MjsyMzA5"/>
+        <attribute name="edited" value="ZHRpO0xBQjEwNC0xNDsyMDIyLTA2LTA5OyIwMjoxNTowMyAiOzY7MjEyMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <output expression="&quot;digite o pre&#231;o do 1 produto&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;digite o pre&#231;o do 2 produto&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;digite o pre&#231;o do 3 produto&quot;" newline="True"/>
+            <input variable="c"/>
+            <if expression="(a&lt;c)">
+                <then>
+                    <output expression="&quot;A ,&#8221; -&#8221;, B ,&#8221; -&#8221;, C&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;A ,&#8221; -&#8221;, C ,&#8221; -&#8221;, B&quot;" newline="True"/>
+                    <if expression="(b&lt;a)">
+                        <then/>
+                        <else>
+                            <if expression="(b&lt;c)">
+                                <then/>
+                                <else>
+                                    <if expression="(a&lt;c)">
+                                        <then>
+                                            <output expression="&quot;B ,&#8221; -&#8221;, A ,&#8221; -&#8221;, C&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;B ,&#8221; -&#8221;, C ,&#8221; -&#8221;, A&quot;" newline="True"/>
+                                            <if expression="(a&lt;b)">
+                                                <then>
+                                                    <output expression="&quot;C ,&#8221; -&#8221;, A ,&#8221; -&#8221;, B&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;C ,&#8221; -&#8221;, B ,&#8221; -&#8221;, A&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

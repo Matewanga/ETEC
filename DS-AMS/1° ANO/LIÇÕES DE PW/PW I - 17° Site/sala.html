@@ -1,0 +1,48 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>MEU SALÁRIO</title>
+      
+      <!--Java Script-->
+      <script language="javascript">
+  
+  function calcular(vh,ht,nd){
+		
+		var sp,sl,bt;
+		
+		bt =200;
+		
+		sp = parseInt(vh.value)*parseInt(ht.value);
+		sl = sp+(bt*parseInt(nd.value));
+		
+		alert("Seu salário normal é "+sp+" e o salário Liquido é "+sl); 
+		
+		
+		}
+		
+		</script>
+		
+	</head>
+
+	<body>
+	
+	<center><h1>Calculando salário</h1></center>
+	
+		<form name="Saláriozin">
+		
+		
+
+			Digite o valor da hora: <input type="text" name="vh">
+			<br>
+			Digite a quantidade de horas trabalhadas no mês: <input type="text" name="ht">
+			<br>
+			Digite o número de dependentes: <input type="text" name="nd">
+			
+			<br><br>
+			
+			<input type="submit" value="calcular saláriozin" onclick='calcular(vh,ht,nd)'>
+	
+		</form>
+	
+	</body>
+</html>

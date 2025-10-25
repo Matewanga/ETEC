@@ -1,0 +1,15 @@
+INÍCIO
+
+DECLARAR:SENHA,ABCD(TEXTO)
+ESCREVA:"escrava a senha"
+LER:SENHA
+
+SE:SENHA="ABCD"
+
+VERDADE
+ESCREVA:"a senha está correta"
+
+FALSO
+ESCREVA:"a senha esá incorreta"
+
+FIM

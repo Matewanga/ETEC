@@ -1,0 +1,105 @@
+// C++ code
+//
+void setup()
+{
+  //semafaro 1
+  pinMode(0, OUTPUT); //red
+  pinMode(1, OUTPUT); //yellow
+  pinMode(2, OUTPUT); //grenn
+  
+  //semafaro 2
+  pinMode(8, OUTPUT);//red
+  pinMode(7, OUTPUT);//yellow
+  pinMode(6, OUTPUT);//green
+  
+  //semafaro 3
+  pinMode(11, OUTPUT);//red
+  pinMode(10, OUTPUT);//yellow
+  pinMode(9, OUTPUT);//green
+  
+  //semafaro 4
+  pinMode(5, OUTPUT);//red
+  pinMode(4, OUTPUT);//yellow
+  pinMode(3, OUTPUT);//green
+}
+
+void loop()
+{
+  digitalWrite(0, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(11, HIGH);
+  digitalWrite(5, HIGH);
+  
+  
+  digitalWrite(0, LOW);
+  delay(2000); 
+  
+  digitalWrite(2, HIGH);
+  delay(4000); // 
+  
+  digitalWrite(2, LOW);
+  delay(1000);
+  
+  digitalWrite(1, HIGH);
+  delay(4000);
+  
+   digitalWrite(1, LOW);
+  delay(1000);
+  
+  digitalWrite(0, HIGH);
+  delay(3000);   //Primeiro sema acima
+  
+  digitalWrite(8, LOW);
+  delay(2000); 
+  
+  digitalWrite(6, HIGH);
+  delay(4000);
+  
+  digitalWrite(6, LOW);
+  delay(1000);
+  
+   digitalWrite(7, HIGH);
+  delay(4000);
+  
+  digitalWrite(7, LOW);
+  delay(1000);
+  
+  digitalWrite(8, HIGH);
+  delay(3000); //Segunda sema acima
+  
+  digitalWrite(11, LOW);
+  delay(2000); 
+  
+  digitalWrite(9, HIGH);
+  delay(4000);
+  
+  digitalWrite(9, LOW);
+  delay(1000);
+  
+   digitalWrite(10, HIGH);
+  delay(4000);
+  
+  digitalWrite(10, LOW);
+  delay(1000);
+  
+  digitalWrite(11, HIGH);
+  delay(3000); //Terceiro sema acima
+  
+   digitalWrite(5, LOW);
+  delay(2000); 
+  
+  digitalWrite(3, HIGH);
+  delay(4000);
+  
+  digitalWrite(3, LOW);
+  delay(1000);
+  
+   digitalWrite(4, HIGH);
+  delay(4000);
+  
+  digitalWrite(4, LOW);
+  delay(1000);
+  
+  digitalWrite(5, HIGH);
+  delay(3000); //quarto
+}

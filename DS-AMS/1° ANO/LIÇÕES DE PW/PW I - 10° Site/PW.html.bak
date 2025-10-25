@@ -1,0 +1,56 @@
+<html>
+    <head>
+	    <title>LICÃO DE FI/PW</title>
+	
+	     <style type="text/css">
+   
+    #MENU {
+        width: 10em;
+	    margin: 0;
+	    font: 15px Verdana;
+	    background: gray;
+	    border: 1 px solid yellow;
+	    }
+    #MENU li {
+        list-style: none;
+	    margin: lem  lem;
+	    }
+    #MENU li a {
+        text-decoration: none;
+	    color: lightblue;
+	    }
+    #MENU li a:hover {
+        background: red;
+        color: lightred;
+        }
+	 #MENU li a:active  
+	     background:red;
+		 color:lightred;
+		 }
+   </style>		 
+	
+	
+	</head>
+
+    <body>
+        
+		<ul id="MENU">
+	<li>
+	   <a href="home.html"="#" title="Voltar ao Início">Home</a>
+	</li>
+	<li>
+	   <a href="sobre.html"="#" title="Sobre a placa Mãe">Sobre a placa mãe</a>
+	</li>
+	<li>
+	   <a href="#" title="Emitir Relatório">Relatório</a> 
+	</li>
+	<li>
+	  <a href="#" title="configurar">Configurar</a>
+	</li>
+	<li>
+	  <a href="#" title="Fale Conosco">Fale Conosco</a>
+	</li>
+		
+
+	</body>
+</html>

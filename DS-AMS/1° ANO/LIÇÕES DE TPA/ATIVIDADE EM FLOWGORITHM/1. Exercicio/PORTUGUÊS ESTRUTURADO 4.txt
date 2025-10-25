@@ -1,0 +1,19 @@
+INÍCIO
+
+DECLARAR:ANO DE NASCIMENTO,MAIORIDADE,RES(INTEIRO)
+ESCREVA:"escreva o seu ano de nascimento"
+LER:ANO DE NASCIMENTO
+ESCREVA:"digete o ano atual"
+LER:MAIORIDADE
+ATRIBUIR: RES<-ANO DE NASCIMENTO-MAIORIDAEDE
+
+SE:RES<18
+
+VERDADE
+ATRIBUIR: MAIORIDAD<-ANO DE NASCIMENTO-2022
+ESCREVA:"você é menor de idade, você tem" &res
+
+FALSO
+ESCREVA:"você é maior de idade,vocé tem "& res
+
+FIM

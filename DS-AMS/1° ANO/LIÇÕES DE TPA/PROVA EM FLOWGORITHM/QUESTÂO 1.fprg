@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-06-01 01:49:33 "/>
+        <attribute name="created" value="QWx1bm87TEFCLTA4LTAyOzIwMjItMDYtMDE7IjEyOjU4OjIwICI7MjE5Ng=="/>
+        <attribute name="edited" value="QWx1bm87TEFCLTA4LTAyOzIwMjItMDYtMDE7IjAxOjQ5OjMzICI7MzsyMzA4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ma, va" type="Integer" array="False" size=""/>
+            <output expression="&quot;voc&#234; gostaria de quantas ma&#231;&#227;s?&quot;" newline="True"/>
+            <output expression="&quot;uma ma&#231;&#227; custa R$0.30&quot;" newline="True"/>
+            <input variable="ma"/>
+            <assign variable="va" expression="ma*0.30"/>
+            <output expression="&quot;o pre&#231;o da ma&#231;a &#233; R$&quot;&amp;va" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

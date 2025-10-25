@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dti"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-05-18 03:22:34 "/>
+        <attribute name="created" value="ZHRpO0xBQjEwNC0xNDsyMDIyLTA1LTE4OyIwMzowNToxNCAiOzIwMTE="/>
+        <attribute name="edited" value="ZHRpO0xBQjEwNC0xNDsyMDIyLTA1LTE4OyIwMzoyMjozNCAiOzE7MjEyMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="peso, alt, imc" type="Real" array="False" size=""/>
+            <output expression="&quot;digite o seu peso&quot;" newline="True"/>
+            <input variable="peso"/>
+            <if expression="peso&lt;18">
+                <then>
+                    <output expression="&quot;voc&#234; esta muito magro&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="peso&lt;24.9">
+                        <then>
+                            <output expression="&quot;voc&#234; est&#225; saud&#225;vel&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="peso&lt;25">
+                                <then>
+                                    <output expression="&quot;voc&#234; est&#225; sobrepeso&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="peso&lt;30">
+                                        <then>
+                                            <output expression="&quot;voc&#234; &#233; est&#225; na obesidade&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;voc&#234; &#233; est&#225; na obesidade&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,20 @@
+Subprograma Principal
+    Declarar Real A, B, C
+    
+    Escrever "Digite o valor de..."
+    Escrever "A"
+    Ler A
+    Escrever "B"
+    Ler B
+    Escrever "C"
+    Ler C
+    Se (A=B) && (B=C)
+        Escrever "Temos um Equilátero"
+    Falso:
+        Se (A=B) && (B <> C)
+            Escrever "Temos um Isóceles"
+        Falso:
+            Escrever "Temos um Escaleno"
+        Fim
+    Fim
+Fim

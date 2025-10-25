@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>fato</title>
+        <script name="javascript">
+       function fat(m) {
+           var e,s;
+
+           e= parseInt(m.value);
+           s= parseInt(m.value)-1;
+
+           for(s;s>=1; s--){
+               e= e*s;
+
+           }
+           alert(e) ;
+           alert(parseInt(m.value));
+       }
+       
+       </script>    
+    </head>
+    <body>
+        <right><h1>CONTA</h1></right>
+
+        <form name="fato">
+            DIGITE ALGUM NÚMERO<input type="text" name="m">
+
+            <br><br>
+
+            <input type="submit" value="resultado" onclick='fat(m)'>
+        </form>
+        
+        
+    </body>
+</html>

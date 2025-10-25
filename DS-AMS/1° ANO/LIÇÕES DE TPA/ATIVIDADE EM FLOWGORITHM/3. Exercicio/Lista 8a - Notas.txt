@@ -1,0 +1,53 @@
+Inicio
+
+	Real: B1, B2, B3, B4, MED;
+	Inteiro: CONC;
+	Caractere: NOTA;
+
+	Escreva("Digite a Nota do...");
+	
+	Escreva("1º Bimestre");
+	Ler(B1);
+	Escreva("2º Bimestre");
+	Ler(B2);
+	Escreva("3º Bimestre");
+	Ler(B3);
+	Escreva("4º Bimestre");
+	Ler(B4);
+
+	MED<- (B1+B2+B3+B4)/4;
+
+	Se(MED<=2.5)
+		CONC<-5;
+		NOTA<-"E"
+	Senão
+		Se(MED<=5)
+			CONC<-4;
+			NOTA<-"D"
+		Senão
+			Se(MED<=7)
+				CONC<-3
+				NOTA<-"C"
+			Senão
+				Se(MED<=9)
+					CONC<-2
+					NOTA<-"B"	
+				Senão
+					Se(MED<=10)
+						CONC<-1
+						NOTA<-"A"
+					Senão
+						Escreva("Valores incorretos, Tente novamente");
+					Fimse;
+				Fimse;
+			Fimse;
+		Fimse;
+	Fimse;
+
+	Se(CONC<=3)
+		Escreva("Aluno Aprovado com Nota: ",NOTA);
+	Senão
+		Escreva("Aluno Reprovado com Nota: ",NOTA);
+	Fimse
+
+Fim

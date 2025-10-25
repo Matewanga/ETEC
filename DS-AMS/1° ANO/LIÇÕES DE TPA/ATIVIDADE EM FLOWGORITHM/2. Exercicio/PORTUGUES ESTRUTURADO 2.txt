@@ -1,0 +1,35 @@
+Subprograma Principal
+    Declarar Inteiro cliente
+    
+    Escrever "bem vindo ao macdonald,o que você gostaria de pedir?"
+    Escrever "bem no nosso cardapio tem"
+    Escrever "1.BigMac"
+    Escrever "2.Quarteirão"
+    Escrever "3.MacChicken"
+    Escrever "4.CheddarMacMelt"
+    Escrever "5.MacMax"
+    Escrever "qual o senhor(a) gostaria de pedir?"
+    Escrever "escreva um numero para qual dos nosso laches você quer?"
+    Ler cliente
+    Se cliente=1
+        Escrever "ok,BigMac indo"
+    Falso:
+        Se cliente=2
+            Escrever "ok,Quarteirão indo"
+        Falso:
+            Se cliente=3
+                Escrever "ok,MacChicken indo"
+            Falso:
+                Se cliente=4
+                    Escrever "ok,CheddarMacMelt indo"
+                Falso:
+                    Se cliente=5
+                        Escrever "ok,MacMax indo"
+                    Falso:
+                        Escrever "então senhor(a) não temos esse laches"
+                    Fim
+                Fim
+            Fim
+        Fim
+    Fim
+Fim

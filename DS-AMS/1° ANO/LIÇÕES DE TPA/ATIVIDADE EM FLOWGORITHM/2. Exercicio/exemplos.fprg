@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dti"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-05-19 02:15:48 "/>
+        <attribute name="created" value="ZHRpO0xBQjEwNC0xNDsyMDIyLTA1LTE5OyIwMTo1MTo0MyAiOzIwMTM="/>
+        <attribute name="edited" value="ZHRpO0xBQjEwNC0xNDsyMDIyLTA1LTE5OyIwMjoxNTo0OCAiOzI7MjEyOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o 1&#186; valor&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Digite o 2&#186; valor&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Digite o 3&#186; valor&quot;" newline="True"/>
+            <input variable="c"/>
+            <if expression="(a&lt;C)">
+                <then>
+                    <output expression="&quot;A ,&#8221; -&#8221;, B ,&#8221; -&#8221;, C&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;A ,&#8221; -&#8221;, C ,&#8221; -&#8221;, B&quot;" newline="True"/>
+                    <if expression="(b&lt;a)">
+                        <then/>
+                        <else>
+                            <if expression="(b&lt;c)">
+                                <then/>
+                                <else>
+                                    <if expression="(a&lt;c)">
+                                        <then>
+                                            <output expression="&quot;B ,&#8221; -&#8221;, A ,&#8221; -&#8221;, C&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;B ,&#8221; -&#8221;, C ,&#8221; -&#8221;, A&quot;" newline="True"/>
+                                            <if expression="(a&lt;b)">
+                                                <then>
+                                                    <output expression="&quot;C ,&#8221; -&#8221;, A ,&#8221; -&#8221;, B&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;C ,&#8221; -&#8221;, B ,&#8221; -&#8221;, A&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,31 @@
+Subprograma Principal
+    Declarar Inteiro a, b, c
+    
+    Escrever "Digite o 1º valor"
+    Ler a
+    Escrever "Digite o 2º valor"
+    Ler b
+    Escrever "Digite o 3º valor"
+    Ler c
+    Se (a<C)
+        Escrever "A ,” -”, B ,” -”, C"
+    Falso:
+        Escrever "A ,” -”, C ,” -”, B"
+        Se (b<a)
+        Falso:
+            Se (b<c)
+            Falso:
+                Se (a<c)
+                    Escrever "B ,” -”, A ,” -”, C"
+                Falso:
+                    Escrever "B ,” -”, C ,” -”, A"
+                    Se (a<b)
+                        Escrever "C ,” -”, A ,” -”, B"
+                    Falso:
+                        Escrever "C ,” -”, B ,” -”, A"
+                    Fim
+                Fim
+            Fim
+        Fim
+    Fim
+Fim

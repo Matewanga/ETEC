@@ -1,0 +1,13 @@
+Subprograma Principal
+    Declarar Real r, d, m, l
+    
+    Escrever "digite um valor para converter"
+    Ler r
+    Atribuir l <- r*1.57
+    Atribuir d <- r*1.80
+    Atribuir m <- r*2.00
+    Escrever "os valores das conversões são"
+    Escrever "alemão"&m
+    Escrever "dólar"&d
+    Escrever "libra"&l
+Fim

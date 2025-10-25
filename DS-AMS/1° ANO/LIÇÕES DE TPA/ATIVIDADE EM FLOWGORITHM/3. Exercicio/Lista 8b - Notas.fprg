@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dti"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-27 02:02:28 "/>
+        <attribute name="created" value="ZHRpO0xBQjEwNC0xMzsyMDIyLTA0LTI3OyIwMTozNDoxNiAiOzIwMTE="/>
+        <attribute name="edited" value="ZHRpO0xBQjEwNC0xMzsyMDIyLTA0LTI3OyIwMjowMjoyOCAiOzE7MjExOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="B1, B2, B3, B4, MED" type="Real" array="False" size=""/>
+            <declare name="CONC" type="Integer" array="False" size=""/>
+            <declare name="NOTA" type="String" array="False" size=""/>
+            <output expression="&quot;Digite a Nota do...&quot;" newline="True"/>
+            <output expression="&quot;1&#186; Bimestre&quot;" newline="True"/>
+            <input variable="B1"/>
+            <output expression="&quot;2&#186; Bimestre&quot;" newline="True"/>
+            <input variable="B2"/>
+            <output expression="&quot;3&#186; Bimestre&quot;" newline="True"/>
+            <input variable="B3"/>
+            <output expression="&quot;4&#186; Bimestre&quot;" newline="True"/>
+            <input variable="B4"/>
+            <assign variable="MED" expression="(B1 + B2 + B3 + B4)/4"/>
+            <if expression="MED &lt;= 2.5">
+                <then>
+                    <assign variable="CONC" expression="5"/>
+                    <assign variable="NOTA" expression="&quot;E&quot;"/>
+                </then>
+                <else>
+                    <if expression="MED &lt;= 5">
+                        <then>
+                            <assign variable="CONC" expression="4"/>
+                            <assign variable="NOTA" expression="&quot;D&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="MED &lt;= 7">
+                                <then>
+                                    <assign variable="CONC" expression="3"/>
+                                    <assign variable="NOTA" expression="&quot;C&quot;"/>
+                                </then>
+                                <else>
+                                    <if expression="MED &lt;=9">
+                                        <then>
+                                            <assign variable="CONC" expression="2"/>
+                                            <assign variable="NOTA" expression="&quot;B&quot;"/>
+                                        </then>
+                                        <else>
+                                            <if expression="MED = 10">
+                                                <then>
+                                                    <assign variable="CONC" expression="1"/>
+                                                    <assign variable="NOTA" expression="&quot;A&quot;"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Valores incorretos, tente novamente&quot;" newline="True"/>
+                                                    <breakpoint/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="CONC &lt;= 3">
+                <then>
+                    <output expression="&quot;Aluno Aprovado com Nota &quot;&amp; NOTA" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Aluno Reprovado com Nota &quot;&amp; NOTA" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,14 @@
+DECLARAR:PESO,MULTA(REAL)
+ESCREVA:"peso dos peixes em quilos"
+LER:PESO
+
+SE:PESO>50
+
+VERDADE
+ATRIBUIR:MULTA<-(PESO-50)*4
+ESCREVA:"a multa será de "& mul
+
+FALSO
+ESCREVA:"o seu peso está sobe medida"
+
+FIM

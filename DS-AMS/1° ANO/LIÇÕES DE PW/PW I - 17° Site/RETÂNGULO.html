@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <!--convertendo o algoritmo-->
+        
+
+        <script language="javascript">
+
+            function calcular(bs,al)
+            {
+
+                var num;
+
+                num=parseInt(bs.value)*parseInt(al.value);
+                alert("a área do retângulo é "+num);
+            }
+
+        </script>
+    </head>
+    <body>
+ <center><h2>calculo de retângulo</h2></center>
+ <br><br>
+   <form name="calculo">
+   Digite a base do retângulo: <input type="text" name="bs">
+   <br><br><br>
+   Digite a altura do retângulo: <input type="text" name="al">
+   <br><br><br>
+   <input type="submit" value="Calcular" onclick="calcular(bs,al)">
+
+    </form>
+    </body>
+</html>

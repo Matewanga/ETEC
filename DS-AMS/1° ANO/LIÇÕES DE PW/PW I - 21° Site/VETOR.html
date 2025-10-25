@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>VETOR</title>
+        <script type="text/javascript">
+            function ver(User,Pass)
+            {
+                var us,pw1,user,pass;
+
+user = User.value;
+
+pass = Pass.value;
+
+us = [];
+
+us[0] = 'João';
+
+us[1] = 'Mariana';
+
+us[2] = 'Giovana';
+
+pw1 = [];
+
+pw1[0] = 'blackpink';
+
+pw1[1] = 'harrystyles';
+
+pw1[2] = 'taylorswift';
+
+if (user == us[0] && pass == pw1[0])
+{
+    document.write("<center><h2>Seja bem vindo</h2>"+us[0]+"<br><br> Bem vindo João,a sua atividade está nesse link: <a href='TRABALHO.html'> LIÇÃO</a>");
+}     
+else
+if  (user == us[1] && pass == pw1[1])
+{
+   document.write("<center><h2>Seja bem vindo</h2>"+us[1]+"<br><br> Bem vindo Mariana,a sua atividade está nesse link: <a href='modelo.html'> LIÇÃO</a>");
+}
+else
+if  (user == us[2] && pass == pw1[2])
+{
+   document.write("<center><h2>Seja bem vindo</h2>"+us[1]+"<br><br> Bem vindo Giovana,a sua atividade está nesse link: <a href='CONTADOR.html'> LIÇÃO</a>");
+}
+else
+{
+    document.write("Você não colocou sua senha ou usuario certo,tente novamente")
+}
+}
+            
+            function reg(User,Pass)
+            {
+                alert("Você não ser cadastrado no momento ´3`")
+            }
+
+
+                        
+        </script>
+    </head>
+    <body>
+        <center>
+		<h1>Entra em sua conta</h1>
+		<br><br>
+		
+			<form name='vetor'>
+			
+			
+			COLOQUE O SEU USUARIO<input type='text' name='User'>
+			<br><br>
+			COLOQUE SUA SENHA<input type='text' name='Pass'>
+			<br><br>
+			</center>
+			
+			<input type='submit' value='Entrar' onclick='ver(User,Pass)'>
+            <input type='submit' value='Cadastrar' onclick='ver(User,Pass)'>
+			<br><br>
+			<input type='reset' value='Limpar'>
+    </body>
+</html>

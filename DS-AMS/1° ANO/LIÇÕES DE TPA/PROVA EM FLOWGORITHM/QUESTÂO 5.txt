@@ -1,0 +1,19 @@
+Subprograma Principal
+    Declarar Inteiro a, b
+    
+    Escrever "escreva um número"
+    Ler a
+    Escrever "escreva o segundo número"
+    Ler b
+    Se a<b
+        Escrever b&" é maior que"&a
+    Falso:
+        Se b<a
+            Escrever a&" é maior que "&b
+        Falso:
+            Se a=b
+                Escrever b&"e"&a&"São números iguais"
+            Fim
+        Fim
+    Fim
+Fim

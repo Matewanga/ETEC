@@ -1,0 +1,21 @@
+Inicio
+
+	Inteiro: IDD, CONC;
+	Texto: CAT;
+	
+	Escreva("Digite sua idade");
+	Ler(IDD)
+	
+	Escolher(IDD)
+		caso IDD<=4 : Escreva("Menores de 5 anos não participam");
+		caso IDD<=7 : CAT<-"Infantil A";
+		caso IDD<=10 : CAT<-"Infantil B";
+		caso IDD<=13 : CAT<-"Juvenil A";
+		caso IDD<=17 : CAT<-"Juvenil B";
+	Senão
+		CAT<- "Senior";
+
+	Fimse
+	Escrever("Categoria:", CAT);
+
+Fim

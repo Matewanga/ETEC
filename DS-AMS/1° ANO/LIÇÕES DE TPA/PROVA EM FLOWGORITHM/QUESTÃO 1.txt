@@ -1,0 +1,9 @@
+Subprograma Principal
+    Declarar Inteiro ma, va
+    
+    Escrever "você gostaria de quantas maçãs?"
+    Escrever "uma maçã custa R$0.30"
+    Ler ma
+    Atribuir va <- ma*0.30
+    Escrever "o preço da maça é R$"&va
+Fim

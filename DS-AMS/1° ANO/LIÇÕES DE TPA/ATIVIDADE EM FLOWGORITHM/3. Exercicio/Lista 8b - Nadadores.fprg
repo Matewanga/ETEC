@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dti"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-27 02:16:01 "/>
+        <attribute name="created" value="ZHRpO0xBQjEwNC0xMzsyMDIyLTA0LTI3OyIwMjowNjowMSAiOzIwMDU="/>
+        <attribute name="edited" value="ZHRpO0xBQjEwNC0xMzsyMDIyLTA0LTI3OyIwMjowNjowMyAiOzE7ZHRpO0xBQjEwNC0xMzsyMDIyLTA0LTI3OyIwMTozNDoxNiAiO0xpc3RhIDdiIC0gTm90YXMuZnByZzs2MDQx"/>
+        <attribute name="edited" value="ZHRpO0xBQjEwNC0xMzsyMDIyLTA0LTI3OyIwMjoxNjowMSAiOzE7MjExNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="IDD, CONC" type="Integer" array="False" size=""/>
+            <declare name="CAT" type="String" array="False" size=""/>
+            <output expression="&quot;Digite sua idade&quot;" newline="True"/>
+            <input variable="IDD"/>
+            <if expression="IDD &lt;= 4">
+                <then>
+                    <output expression="&quot;Menores de 5 anos n&#227;o participam&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="IDD &lt;= 7">
+                        <then>
+                            <assign variable="CAT" expression="&quot;Infantil A&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="IDD &lt;= 10">
+                                <then>
+                                    <assign variable="CAT" expression="&quot;Infantil B&quot;"/>
+                                </then>
+                                <else>
+                                    <if expression="IDD &lt;= 13">
+                                        <then>
+                                            <assign variable="CAT" expression="&quot;Juvenil A&quot;"/>
+                                        </then>
+                                        <else>
+                                            <if expression="IDD &lt;=17">
+                                                <then>
+                                                    <assign variable="CAT" expression="&quot;Juvenil B&quot;"/>
+                                                </then>
+                                                <else>
+                                                    <assign variable="CAT" expression="&quot;Senior&quot;"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                    <output expression="&quot;Categoria: &quot;&amp; CAT" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

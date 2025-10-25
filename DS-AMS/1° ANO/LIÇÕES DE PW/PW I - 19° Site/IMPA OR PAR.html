@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>IMPA OR PAR</title>
+
+        <script name="javascript">
+            function par(b1,b2){
+                var b1,b2,r;
+
+                b1 = parseInt(b1.value);
+                b2 = parseInt(b2.value);
+
+                l = b1
+
+                while(l<=b2){
+                    if(l%2==0){
+                        document.write(l+"<br>");
+                    }
+
+                    l++;
+                }
+            }
+
+        </script>    
+
+    </head>
+    <body>
+        <left><h1>PAR</h1></left>
+
+        <form name="par">
+            DIGITE O PRIMEIRO NÚMERO <input type="text" name="b1">
+            <br><br>
+            DIGITE OUTRO NÚMERO MAIOR <input type="text" name="b2">
+            <br><br><br><br>
+
+            <input type="submit" value="RESULTADO" onclick='par(b1,b2)'>
+        </form>
+    </body>
+</html>

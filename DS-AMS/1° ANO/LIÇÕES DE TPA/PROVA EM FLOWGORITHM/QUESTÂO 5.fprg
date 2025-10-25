@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dti"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-06-09 02:39:00 "/>
+        <attribute name="created" value="ZHRpO0xBQjEwNC0xNDsyMDIyLTA2LTA5OyIwMjoyMDoyNCAiOzIwMDk="/>
+        <attribute name="edited" value="ZHRpO0xBQjEwNC0xNDsyMDIyLTA2LTA5OyIwMjozOTowMCAiOzI7MjEyMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;escreva um n&#250;mero&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;escreva o segundo n&#250;mero&quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="a&lt;b">
+                <then>
+                    <output expression="b&amp;&quot; &#233; maior que&quot;&amp;a" newline="True"/>
+                </then>
+                <else>
+                    <if expression="b&lt;a">
+                        <then>
+                            <output expression="a&amp;&quot; &#233; maior que &quot;&amp;b" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="a=b">
+                                <then>
+                                    <output expression="b&amp;&quot;e&quot;&amp;a&amp;&quot;S&#227;o n&#250;meros iguais&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

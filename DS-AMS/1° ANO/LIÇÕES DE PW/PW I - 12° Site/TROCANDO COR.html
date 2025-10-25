@@ -1,0 +1,45 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FORMULARIO COM COR</title>
+
+<script language =javascript>
+    function MudarCor(cor){
+
+
+        switch(cor){
+    
+
+    case 'Amarelo' : document.bgColor='yellow'; break
+    case 'Azul' : document.bgColor='blue'; break
+    case 'Ciano' :document.bgColor='cyan'; break
+    case 'Verde' :document.bgColor='green'; break
+    case 'Branco' :document.bgColor='white'; break
+    case 'Vermelho' :document.bgColor='red'; break
+    default:
+        alert("resposta invalida");
+
+
+    }
+
+    }
+
+</script>
+
+    <!--trocar cor-->
+
+</head> 
+<body>
+<form name="formulario"
+<b><i>
+SELECIONE UMA COR PARA O FUNDO DA TELA:
+</i></b>
+<br><br>
+<input type="radio"name= "fundo" onClick="MudarCor('Amarelo')">Amarelo
+<input type="radio"name= "fundo" onclick="MudarCor('Azul')">Azul
+<input type="radio"name= "fundo" onclick="MudarCor('Ciano')">Ciano
+<input type="radio"name= "fundo" onclick="MudarCor('Verde')">Verde
+<input type="radio"name= "fundo" onclick="MudarCor('Branco')">Padrão
+<input type="radio"name= "fundo" onclick="MudarCor('Vermelho')">Vermelho
+</body>
+</html>

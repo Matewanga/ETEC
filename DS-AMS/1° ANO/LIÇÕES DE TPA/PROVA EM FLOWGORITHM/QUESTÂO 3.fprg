@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FATEC ZONA LESTE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-06-15 02:14:33 "/>
+        <attribute name="created" value="RkFURUMgWk9OQSBMRVNURTtMQUIxMDMtMTU7MjAyMi0wNi0xNTsiMDE6MjY6NDYgIjsyODA2"/>
+        <attribute name="edited" value="RkFURUMgWk9OQSBMRVNURTtMQUIxMDMtMTU7MjAyMi0wNi0xNTsiMDI6MTQ6MzMgIjsxOzI5MDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="esp, pre, p" type="Integer" array="False" size=""/>
+            <output expression="&quot;escreva qual e o custo do espet&#225;culo  &quot;" newline="True"/>
+            <input variable="esp"/>
+            <output expression="&quot;qual e o pre&#231;o do convite&quot;" newline="True"/>
+            <input variable="pre"/>
+            <assign variable="p" expression="esp/pre"/>
+            <output expression="&quot;precisamos de &quot;&amp;p&amp;&quot; convites&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,23 @@
+Subprograma Principal
+    Declarar Real peso, alt, imc
+    
+    Escrever "digite o seu peso"
+    Ler peso
+    Se peso<18
+        Escrever "você esta muito magro"
+    Falso:
+        Se peso<24.9
+            Escrever "você está saudável"
+        Falso:
+            Se peso<25
+                Escrever "você está sobrepeso"
+            Falso:
+                Se peso<30
+                    Escrever "você é está na obesidade"
+                Falso:
+                    Escrever "você é está na obesidade"
+                Fim
+            Fim
+        Fim
+    Fim
+Fim

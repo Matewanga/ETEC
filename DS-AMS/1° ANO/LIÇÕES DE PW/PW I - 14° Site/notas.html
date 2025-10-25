@@ -1,0 +1,53 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>Estrutura de Desicão</title>
+      
+      <!--Java Script-->
+      <script language="javascript">
+     function calcular(a,b,c,d)
+     {
+         var num;
+
+        num = (parseFloat(a.value)+parseFloat(b.value)+parseFloat(c.value)+parseFloat(d.value))/4  
+
+        if (num<=5){
+        alert("Você foi reprovado");
+        }
+        else{
+
+            if(num<=7){
+                alert("Você está de recuperação");
+            }
+            else{
+
+                alert("Você foi aprovado");
+            }
+        }
+     }
+
+
+      </script>
+        
+    </head>
+    <body>
+<center><h1>Calculando sua nota -_-</h1></center>
+<br><br>
+<form name="calculo">
+    Digite a sua nota 1 bimestre --> <input type="text" name="a">
+    <br><br>
+    Digite a sua nota 2 bimestre --> <input type="text" name="b">
+    <br><br>
+    Digite a sua nota 3 bimestre --> <input type="text" name="c">
+    <br><br>
+    Digite a sua nota do 4 bimestre --> <input type="text" name="d">
+    <br><br>
+    <input type="submit" value="Calcular" onclick="calcular(a,b,c,d)">
+     
+
+
+</form>
+
+    </body>
+    
+</html>

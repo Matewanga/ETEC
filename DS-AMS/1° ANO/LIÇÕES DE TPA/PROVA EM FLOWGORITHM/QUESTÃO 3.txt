@@ -1,0 +1,10 @@
+Subprograma Principal
+    Declarar Inteiro esp, pre, p
+    
+    Escrever "escreva qual e o custo do espetáculo  "
+    Ler esp
+    Escrever "qual e o preço do convite"
+    Ler pre
+    Atribuir p <- esp/pre
+    Escrever "precisamos de "&p&" convites"
+Fim

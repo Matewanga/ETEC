@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dti"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-05-18 02:26:50 "/>
+        <attribute name="created" value="ZHRpO0xBQjEwNC0xNDsyMDIyLTA1LTE4OyIwMTowNTowNyAiOzIwMTE="/>
+        <attribute name="edited" value="ZHRpO0xBQjEwNC0xNDsyMDIyLTA1LTE4OyIwMjoyNjo1MCAiOzIwOzIxNzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="hora" type="Real" array="False" size=""/>
+            <output expression="&quot;programa para indetifica&#231;&#226;o de turno&quot;" newline="True"/>
+            <output expression="&quot;digite o horario em que seu turno inicia&quot;" newline="True"/>
+            <input variable="hora"/>
+            <if expression="hora&lt;04.59">
+                <then>
+                    <output expression="&quot;periodo da noite&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="hora&lt;12.59">
+                        <then>
+                            <output expression="&quot;periodo da manh&#226;&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="hora&lt;20.59">
+                                <then>
+                                    <output expression="&quot;periodo da tarde&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;periodo da noite&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

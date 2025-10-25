@@ -1,0 +1,36 @@
+Subprograma Principal
+    Declarar Inteiro num
+    
+    Escrever "escolha um número refente a disciplina:"
+    Escrever "1.PW1"
+    Escrever "2.Design Digital"
+    Escrever "3.Inglês"
+    Escrever "4.Fundamentos"
+    Escrever "5.TPA"
+    Ler num
+    Se num=1
+        Escrever "A disciplina escolhida foi : PW1"
+    Falso:
+        Se num=2
+            Escrever "A disciplina escolhida foi : DD"
+        Falso:
+            Se num=3
+                Escrever "A disciplina escolhida foi : INGLÊS"
+            Falso:
+                Se num=4
+                    Escrever "A disciplina escolhida foi : FUNDAMENTOS"
+                Falso:
+                    Se num=5
+                        Escrever "A disciplina escolhida foi : TPA"
+                    Falso:
+                        Se num=6
+                            Escrever "DICIPLINA INVÁLIDA"
+                        Falso:
+                            Escrever "DICIPLINA INVÁLIDA"
+                        Fim
+                    Fim
+                Fim
+            Fim
+        Fim
+    Fim
+Fim

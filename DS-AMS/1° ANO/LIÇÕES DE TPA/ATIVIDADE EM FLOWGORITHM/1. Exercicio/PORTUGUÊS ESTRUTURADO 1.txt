@@ -1,0 +1,16 @@
+INÍCIO
+
+DECLARAR:ALTURA,PESO(REAL)
+DECLARAR:SEX(TEXTO)
+ESCREVA:"escreva a sua altura"
+LER:ALTURA
+ESCREVA:"escreva seu sexo,se for menino escreve m,e se for menina escreve f"
+LER:SEXO
+                 
+SE:SEX="F"
+VERDADE:ATRIBUIR:PES<-(62.1*ALTURA)-44.7
+FALSO:ATRIBUIR: PES<-(72.7*ALTURA)-58
+
+ESCREVA:"seu peso ideal é "& pes
+
+FIM

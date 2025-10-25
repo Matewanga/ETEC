@@ -1,0 +1,64 @@
+<html>
+
+
+
+   <head>
+        <meta charset="utf-8">
+        <title>Departamentos</title>
+        
+        <script language="javascript">
+        function verificar(co){
+
+
+
+           var codigo;
+            codigo=parseInt(co.value);
+            
+            if(codigo==1){
+            alert("Você trabalhará no departamento de expedição");
+            }else{
+                if(codigo==2){
+                alert("Você trabalhará no departamento de recursos Humanos");
+                }else{
+                    if(codigo==3){
+                    alert("Você trabalhará no departamento de logística");
+                    }else{
+                        if(codigo==4){
+                        alert("Você trabalhará no departamento de contabilidade");
+                        }else{
+                            if(codigo==5){
+                            alert("Você trabalhará no departamento de departamento Pessoal");
+                            }else{
+                                if(codigo==6){
+                                alert("Você trabalhará no departamento de informática");
+                                }else{
+                                    alert("Codigo apresentado não existe na empresa");
+                                }
+                            }
+                        }
+                    }
+                }
+            }            
+        }
+        
+        </script>
+        
+    </head>
+
+
+
+   <body>
+    
+    <center><h1>TRABALHO</h1></center>
+    
+        <form name="Depart">
+    
+            Digite o codigo do departamento de trabalho: <input type="text" name="co">
+            <br><br>
+            
+            <input type="submit" value="Clique para saber o departamento" onclick='verificar(co)'>
+    
+        </form>
+    
+    </body>
+</html>

@@ -1,0 +1,47 @@
+Subprograma Principal
+    Declarar Inteiro DIA1, DIA2, MES1, MES2, ANO1, ANO2
+    Declarar Inteiro DIA3, MES3, ANO3
+    
+    Escrever "Digite o primeiro..."
+    Escrever "Dia"
+    Ler DIA1
+    Escrever "Mês"
+    Ler MES1
+    Escrever "Ano"
+    Ler ANO1
+    Escrever "Digite o segundo..."
+    Escrever "Dia"
+    Ler DIA2
+    Escrever "Mês"
+    Ler MES2
+    Escrever "Ano"
+    Ler ANO2
+    Atribuir ANO3 <- ANO1-ANO2
+    Atribuir MES3 <- MES1-MES2
+    Atribuir DIA3 <- DIA1-DIA2
+    Se ANO3 > 0
+        Escrever DIA1&"/"&MES1&"/"&ANO1&" , "&DIA2&"/"&MES2&"/"&ANO2
+    Falso:
+        Se ANO3 < 0
+            Escrever DIA2&"/"&MES2&"/"&ANO2  &" , "& DIA1&"/"&MES1&"/"&ANO1
+        Falso:
+            Se MES3 > 0
+                Escrever DIA1&"/"&MES1&"/"&ANO1&" , "&DIA2&"/"&MES2&"/"&ANO2
+            Falso:
+                Se MES3 <0
+                    Escrever DIA2&"/"&MES2&"/"&ANO2  &" , "& DIA1&"/"&MES1&"/"&ANO1
+                Falso:
+                    Se DIA3 > 0
+                        Escrever DIA1&"/"&MES1&"/"&ANO1&" , "&DIA2&"/"&MES2&"/"&ANO2
+                    Falso:
+                        Se DIA3< 0
+                            Escrever DIA2&"/"&MES2&"/"&ANO2  &" , "& DIA1&"/"&MES1&"/"&ANO1
+                        Falso:
+                            Escrever DIA1&"/"&MES1&"/"&ANO1&" , "&DIA2&"/"&MES2&"/"&ANO2
+                        Fim
+                    Fim
+                Fim
+            Fim
+        Fim
+    Fim
+Fim

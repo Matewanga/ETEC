@@ -1,0 +1,52 @@
+<html>
+
+
+
+   <head>
+        <meta charset="utf-8">
+        <title>MAIOR OU NÃO</title>
+        
+        <script language="javascript">
+        function verificar(n1,p2){
+                
+            if(parseFloat(n1.value)==parseFloat(p2.value)){
+            
+            alert("O primeiro número é igual ao segundo "+parseFloat(n1.value)+", "+parseFloat(p2.value));
+            
+            }else{
+                if(parseFloat(n1.value)>parseFloat(p2.value)){
+                
+                alert("O primeiro número "+parseFloat(n1.value)+" é maior que o segundo "+parseFloat(p2.value));
+                
+                }else{
+                
+                alert("O segundo número "+parseFloat(p2.value)+" é maior que o primeiro "+parseFloat(n1.value));
+                
+                }
+            }
+        }
+        
+        </script>
+        
+    </head>
+
+
+
+   <body>
+    
+    <center><h1>NÚMEROS</h1></center>
+    
+        <form name="NÚMEROS">
+    
+            Digite o primeiro número: <input type="text" name="n1">
+            <br>
+            Digite o segundo número: <input type="text" name="p2">
+            
+            <br><br>
+            
+            <input type="submit" value="CLIQUE PARA CALCULAR" onclick='verificar(n1,p2)'>
+    
+        </form>
+    
+    </body>
+</html>
