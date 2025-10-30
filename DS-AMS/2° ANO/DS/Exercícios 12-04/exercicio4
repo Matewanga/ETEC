@@ -1,0 +1,53 @@
+class Pessoa(var nome: String,var rg: String,var cpf: String, var idade: Int,
+             var endereco: String, var foneResidencial: String,var foneComercial: String,
+             var celular: String,var nomePai: String,var nomeMae: String,var nomeConjuge: String,var sexo: Char) 
+    
+    
+    fun cadastrarPessoa() {
+        println("Bem Vindo ao Cadastro de Pessoa!")
+        println("Nome:")
+        println("RG: ") 
+        println("CPF: ") 
+        println("Idade: ") 
+        println("Endereço: ") 
+        println("Fone Residencial: ")
+        println("Fone Comercial:") 
+        println("Celular: ") 
+        println("Nome do Pai: ") 
+        println("Nome da Mãe: ")
+        println("Nome do Cônjuge: ") 
+        println("Sexo, sendo M para Masculino e F para feminino : ") 
+        
+        
+
+        
+    }
+    
+     fun listarCadastro(pessoa: Pessoa) {
+        println("Exercício 4")
+        println("Bem Vindo ao Cadastro de ${pessoa.nome}") 
+        println("Nome: ${pessoa.nome}") 
+        println("RG: ${pessoa.rg}") 
+        println("CPF: ${pessoa.cpf}") 
+        println("Idade: ${pessoa.idade}") 
+        println("Endereço: ${pessoa.endereco}") 
+        println("Fone Residencial: ${pessoa.foneResidencial}")
+        println("Fone Comercial: ${pessoa.foneComercial}") 
+        println("Celular: ${pessoa.celular}") 
+        println("Nome do Pai: ${pessoa.nomePai}") 
+        println("Nome da Mãe: ${pessoa.nomeMae}")
+        println("Nome do Cônjuge: ${pessoa.nomeConjuge}") 
+        println("Sexo: ${pessoa.sexo}") 
+
+}
+
+
+
+
+fun main() {
+    val pessoa = Pessoa("Mariana","12345678", "123.456.789-00", 16, 
+                            "Rua das Flores , 130", "(11) 9999-9999",
+                        "(11) 123456789", "(11) 99999-9999", "pai", "mãe", "fulano", 'F')
+    listarCadastro(pessoa)
+   
+}

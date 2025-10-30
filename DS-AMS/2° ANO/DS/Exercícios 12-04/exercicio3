@@ -1,0 +1,19 @@
+class Externa {
+    private var x = 7
+
+    fun instanciaInterna() {
+        val inObj = Interna() // instancia interna
+        inObj.imprimeExterna() // invoca método da interna
+    }
+
+    inner class Interna {
+        fun imprimeExterna() {
+            println("x vale $x")
+        }
+    }
+}
+
+fun main() {
+    val exObj = Externa() // instancia externa
+    exObj.instanciaInterna() // invoca método da externa
+}

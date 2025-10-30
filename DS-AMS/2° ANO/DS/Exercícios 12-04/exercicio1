@@ -1,0 +1,28 @@
+class Funcionario(var nome: String, var idade: Int, var salario: Double) {
+    fun andar() {
+        println("$nome está andando")
+    }
+
+    fun falar() {
+        println("$nome está falando")
+    }
+
+    fun comer() {
+        println("$nome está comendo")
+    }
+
+    fun beber() {
+        println("$nome está bebendo")
+    }
+}
+
+fun main() {
+    val funcionario = Funcionario("Ana", 30, 5000.0)
+    println("Nome: ${funcionario.nome}")
+    println("Idade: ${funcionario.idade}")
+    println("Salário: R$ ${funcionario.salario}")
+    funcionario.andar()
+    funcionario.falar()
+    funcionario.comer()
+    funcionario.beber()
+}
