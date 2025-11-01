@@ -14,7 +14,7 @@ DS-AMS/
 │  ├─ Design Digital/
 │  ├─ Fundamentos da Informatica/
 │  ├─ Programação Web I/
-│  └─ Técincas de Programação e Algoritmos/
+│  └─ Técnicas de Programação e Algoritmos/
 ├─ 2°ANO/
 │  ├─ Bnaco de Dados I/
 │  ├─ Desenvolvimento de Sistemas/
